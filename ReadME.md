@@ -20,6 +20,13 @@ This is a Node.js authentication system built using Express, MongoDB, Mongoose, 
 - dotenv
 
 
+## API DOCUMENTATION
+
+https://documenter.getpostman.com/view/50349753/2sB3dSNo9P
+
+## DEPLOY LINK(render)
+
+https://jwt-auth-task.onrender.com/
 
 ## API Endpoints
 
@@ -30,8 +37,9 @@ POST /api/users/register
 POST /api/users/login
 
 ### Get User (Protected)
-GET /api/users/me  
+GET /api/users/getdata  
 Authorization: Bearer <token>
 
 ## Author
 Mohammed Nawfal
+
