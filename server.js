@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import connectDb from "./databases/dbConfig.js";
-import Userrouter from "./views/userViews.js";
+import userRoutes from "./routes/userRoutes.js";
 
 dotenv.config();
 
@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/api/users", Userrouter);
+app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
   res.send("Welcome to Task Home Page");
@@ -22,3 +22,4 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server Starts at ${port}`);
 });
+
