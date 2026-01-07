@@ -20,3 +20,4 @@ router.post("/login", userLogin);
 router.get("/getdata", authMiddleware, getUser);
 
 export default router;
+
